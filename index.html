@@ -1,23 +1,11 @@
 <html>
-  <body>
-    <p id='server-time'></p>
-    <p id='message'></p>
-    <script>
-      var HOST = location.origin.replace(/^http/, 'ws')
-      var ws = new WebSocket(HOST);
-      var el = document.getElementById('server-time');
-      var msg = document.getElementById('message');
-      ws.onmessage = function (e) {
-        var object = JSON.parse(e.data);
-        if(object.date)
-          el.innerHTML = 'Server time: ' + object.date;
-         if(object.message)
-          msg.innerHTML = object.message;
-      };
-      ws.onopen = function(){
-        console.log('Open');
-        ws.send('Something');
-      }
-    </script>
-  </body>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p id="date"></p>
+  <p id="message"></p>
+  <script src="jquery/dist/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
 </html>
