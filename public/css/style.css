@@ -18,12 +18,52 @@ ul.panel>li.display{
 	display: inline-block;
 	padding: 10px;
 	margin:3px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 ul.panel>li.display>div{
 	position: absolute;
 	margin: 10px;
 }
+
 .top{top:0;}
 .left{left:0;}
 .right{right:0;}
 .bottom{bottom:0;}
+
+#debugger{
+	width:80%;
+	height:40vh;
+	margin:0 auto;
+	overflow: auto;
+	border:1px solid #ccc;
+	word-wrap: break-word;
+}
+pre{
+	 white-space: pre-wrap;       /* css-3 */
+	 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	 white-space: -pre-wrap;      /* Opera 4-6 */
+	 white-space: -o-pre-wrap;    /* Opera 7 */
+	 word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.btn-send{
+	margin-bottom: 10px;
+}
+.student-selector{
+	margin-right: 60px;
+}
+.student-selector>select{
+	float:left;
+}
+.student-preview{
+	float:right;
+	height:45px;
+	width:45px;
+	border: 1px solid #ccc;
+	background-color: #eee;
+	border-radius: 5px;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
