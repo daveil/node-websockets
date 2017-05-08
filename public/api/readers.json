@@ -1,0 +1,32 @@
+[
+  {
+    "id": 123,
+    "name": "A",
+    "type": "in"
+  },
+  {
+    "id": 124,
+    "name": "B",
+    "type": "in"
+  },
+  {
+    "id": 125,
+    "name": "C",
+    "type": "in"
+  },
+  {
+    "id": 126,
+    "name": "D",
+    "type": "out"
+  },
+  {
+    "id": 127,
+    "name": "E",
+    "type": "out"
+  },
+  {
+    "id": 128,
+    "name": "F",
+    "type": "out"
+  }
+]

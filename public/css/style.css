@@ -1,0 +1,29 @@
+.container ul,.container li{
+	padding:0;
+	margin:0;
+}
+ul.panel{
+	list-style:none;
+	width:100%;
+	display: block;
+}
+ul#panel-template{
+	display: none;
+}
+ul.panel>li.display{
+	width:32%;
+	height:45vh;
+	background: #eee;
+	position: relative;
+	display: inline-block;
+	padding: 10px;
+	margin:3px;
+}
+ul.panel>li.display>div{
+	position: absolute;
+	margin: 10px;
+}
+.top{top:0;}
+.left{left:0;}
+.right{right:0;}
+.bottom{bottom:0;}

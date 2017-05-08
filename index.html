@@ -1,10 +1,30 @@
 <html>
 <head>
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <p id="date"></p>
-  <p id="message"></p>
+  <div class="container">
+      <ul id="panel-template" class="panel">
+        <li class="display">
+            <div class="sno top left">123</div>
+            <div class="reader-name top right">A</div>
+            <div class="student-name bottom right">Juan Dela Cruz</div>
+        </li>
+      </ul>
+      <div class="row">
+      <button class="btn btn-sm btn-success"><- I N </button>
+      <p id="date" class="pull-right"></p>
+      <div class="clear-fix"></div>
+      </div>
+      <ul id="panel-in" class="panel in">
+      </ul>
+      <button class="btn btn-sm btn-danger">-> OUT</button>
+      <ul id="panel-out" class="panel out">
+      </ul>
+      
+      
+  </div>
   <script src="jquery/dist/jquery.min.js"></script>
   <script src="js/index.js"></script>
 </body>
