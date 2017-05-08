@@ -4,16 +4,19 @@ module.exports = function (){
 	const path = require('path');
 
 	const PORT = process.env.PORT || 3000;
-	const INDEX = path.join(__dirname, '../index.html');
+	const INDEX = path.join(__dirname, 'views/index.html');
+	const CLIENT = path.join(__dirname, 'views/client.html');
 
 	const app = express();
 	app.use(express.static('public'));
 	app.use(express.static('bower_components'));
 
 	const server = app
-	  .use((req, res) => res.sendFile(INDEX) )
 	  .listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
+	app.get('/',(req,res) => res.sendFile(INDEX) );
+	app.get('/client',(req,res) => res.sendFile(CLIENT) );
+	
 	const  wss = new SocketServer({ server });
 	wss.on('connection', (ws) => {
 		  console.log('Client connected');
