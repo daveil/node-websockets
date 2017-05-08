@@ -1,0 +1,44 @@
+[
+  {
+    "id": 234,
+    "name": "Juan Dela Cruz",
+    "picture": "img/boy-1.jpg",
+    "rfid": 112233,
+    "sno": "2017-112233"
+  },
+  {
+    "id": 235,
+    "name": "Miguel Andres",
+    "picture": "img/boy-2.jpg",
+    "rfid": 445566,
+    "sno": "2017-445566"
+  },
+  {
+    "id": 236,
+    "name": "John Manalo",
+    "picture": "img/boy-3.jpg",
+    "rfid": 778899,
+    "sno": "2017-778899"
+  },
+  {
+    "id": 237,
+    "name": "Maria Diokno",
+    "picture": "img/girl-1.jpg",
+    "rfid": 224466,
+    "sno": "2017-224466"
+  },
+  {
+    "id": 238,
+    "name": "Julia Mendoza",
+    "picture": "img/girl-2.jpg",
+    "rfid": 880022,
+    "sno": "2017-880022"
+  },
+  {
+    "id": 239,
+    "name": "Mary Dominguez",
+    "picture": "img/girl-3.jpg",
+    "rfid": 775533,
+    "sno": "2017-775533"
+  }
+]
