@@ -6,6 +6,7 @@ module.exports = function (){
 	const PORT = process.env.PORT || 3000;
 	const INDEX = path.join(__dirname, 'views/index.html');
 	const CLIENT = path.join(__dirname, 'views/client.html');
+	const DASH = path.join(__dirname, 'views/dashboard.html');
 
 	const app = express();
 	app.use(express.static('public'));
@@ -16,6 +17,7 @@ module.exports = function (){
 
 	app.get('/',(req,res) => res.sendFile(INDEX) );
 	app.get('/client',(req,res) => res.sendFile(CLIENT) );
+	app.get('/dashboard',(req,res) => res.sendFile(DASH) );
 	
 	const  wss = new SocketServer({ server });
 	wss.on('connection', (ws) => {
